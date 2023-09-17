@@ -1,3 +1,4 @@
+import 'package:dart_practise_tasks/Week2_Exercises/Exercise_2.dart';
 import 'package:flutter/material.dart';
 import 'Week2_Exercises/Exercise_1.dart';
 
@@ -12,17 +13,21 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //navigation bar
       appBar: AppBar(
         backgroundColor: Colors.blue,
         centerTitle: true,
         title: Text('This is Home Screen', style: TextStyle(color: Colors.white),),
       ),
-      body: Column(
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Center(
-              child: InkWell(
+      //body of the screen
+      body: Padding(
+        padding: const EdgeInsets.all(15),
+        child: Center(
+          child: Column(
+            children: [
+
+              //button for exercise - 1
+              InkWell(
                 onTap: (){
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => Exercise1()
@@ -41,9 +46,33 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
               ),
-            ),
-          )
-        ],
+
+              SizedBox(height: 20,),
+
+              //button for exercise - 2
+              InkWell(
+                onTap: (){
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => EvenOrOdd()
+                      )
+                  );
+                },
+                child: Container(
+                  width: 300,
+                  height: 30,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(3),
+                    color: Colors.green,
+                  ),
+                  child: Center(
+                    child: Text('Exercise 2', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),),
+                  ),
+                ),
+              ),
+
+            ],
+          ),
+        ),
       ),
     );
   }
