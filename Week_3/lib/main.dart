@@ -1,3 +1,4 @@
+import 'package:assignment_2/accounts.dart';
 import 'package:flutter/material.dart';
 import 'package:assignment_2/Forgot_password.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ForgotPassword(),
+      home: const loginAccounts(),
     );
   }
 }
