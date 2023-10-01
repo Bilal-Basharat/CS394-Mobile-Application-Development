@@ -8,8 +8,20 @@ class Screen1 extends StatefulWidget {
 }
 
 class _Screen1State extends State<Screen1> {
+  TextEditingController inputText = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('This is Screen 1'),
+      ),
+      body: Column(
+        children: [
+          Container(
+            child: Image.asset('assets/flag-pakistan.jpg'),
+          ),
+        ],
+      ),
+    );
   }
 }
