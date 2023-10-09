@@ -20,6 +20,10 @@ class _Screen1State extends State<Screen1> {
           Container(
             child: Image.asset('assets/flag-pakistan.jpg'),
           ),
+          Text('Widgets used are: \n 1. AppBar Widget \n 2. Scaffold Widget \n 3. Column Widget \n'
+              '4. Image Widget \n',
+          style: TextStyle(color: Colors.red, fontSize: 20,fontWeight: FontWeight.bold)),
+
         ],
       ),
     );
