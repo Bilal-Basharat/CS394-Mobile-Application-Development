@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/folder1/Screen5.dart';
+import 'package:flutter_widgets/folder2/Screen7.dart';
 
 import 'folder1/Screen1.dart';
 import 'folder1/Screen2.dart';
@@ -32,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 SizedBox(height: 10),
 
-                //first three button
+                //1-3 buttons
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -63,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
                     SizedBox(width: 10),
-                    // 2nd Screen button
+                    // 3rd Screen button
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
@@ -79,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                 SizedBox(height: 15),
 
-                //3-6 buttons
+                //4-6 buttons
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -96,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
 
                     SizedBox(width: 10),
-                    // 2nd Screen button
+                    // 5th Screen button
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
@@ -110,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
                     SizedBox(width: 10),
-                    // 2nd Screen button
+                    // 6th Screen button
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
@@ -123,6 +124,54 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ],
                 ),
+
+                SizedBox(height: 15),
+
+                //7-9 buttons
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    // 7th Screen button
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context)
+                          {
+                            return Screen7();
+                          }),);
+                      },
+                      child: Text('Screen 7'),
+                    ),
+
+                    SizedBox(width: 10),
+
+                    // 8th Screen button
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context)
+                          {
+                            return Screen5();
+                          }),);
+                      },
+                      child: Text('Screen 8'),
+                    ),
+
+
+                    SizedBox(width: 10),
+                    // 9th Screen button
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context)
+                          {
+                            return Screen6();
+                          }),);
+                      },
+                      child: Text('Screen 9'),
+                    ),
+                  ],
+                )
               ],
             ),
           ),
