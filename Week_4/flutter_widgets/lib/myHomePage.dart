@@ -5,6 +5,7 @@ import 'folder1/Screen1.dart';
 import 'folder1/Screen2.dart';
 import 'folder1/Screen3.dart';
 import 'folder1/Screen4.dart';
+import 'folder2/Screen6.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -115,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(context,
                           MaterialPageRoute(builder: (context)
                           {
-                            return Screen3();
+                            return Screen6();
                           }),);
                       },
                       child: Text('Screen 6'),

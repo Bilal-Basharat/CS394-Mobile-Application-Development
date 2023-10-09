@@ -9,9 +9,6 @@ class Screen5 extends StatefulWidget {
 
 class _Screen5State extends State<Screen5> {
 
-  final List<String> entries = <String>['A', 'B', 'C'];
-  final List<int> colorCodes = <int>[600, 500, 100];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
