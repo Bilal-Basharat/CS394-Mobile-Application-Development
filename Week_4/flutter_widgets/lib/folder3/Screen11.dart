@@ -30,6 +30,8 @@ class _Screen11State extends State<Screen11> {
             SizedBox(height: 20),
 
             TableExample(),
+
+            SizedBox(height: 20),
             Text('Widget used are: \n 1. Data Table Widget \n 2. Data Column '
                 '\n 3. Data Row \n 4. Data Cell'
                 '5. Table \n'
