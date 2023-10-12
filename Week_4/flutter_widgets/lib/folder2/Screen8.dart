@@ -49,6 +49,11 @@ class _Screen8State extends State<Screen8> {
             Text('This is Slider widget example'),
             Expanded(child: SliderExample()),
 
+            SizedBox(height: 20),
+
+            Text('Widgets used are: \n 1. Expansion Panel List WIdget \n 2. Single Child Scroll View Widget \n  '
+                '3. Slider Widget \n 4. List Tile Widget ',
+                style: TextStyle(color: Colors.blue, fontSize: 18,fontWeight: FontWeight.bold)),
           ],
         ),
       ),

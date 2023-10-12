@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/folder1/Screen5.dart';
+import 'package:flutter_widgets/folder2/Screen10.dart';
 import 'package:flutter_widgets/folder2/Screen7.dart';
 import 'package:flutter_widgets/folder2/Screen9.dart';
+import 'package:flutter_widgets/folder3/Screen11.dart';
 
 import 'folder1/Screen1.dart';
 import 'folder1/Screen2.dart';
@@ -187,7 +189,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(context,
                           MaterialPageRoute(builder: (context)
                           {
-                            return Screen7();
+                            return Screen10();
                           }),);
                       },
                       child: Text('Screen 10'),
@@ -201,7 +203,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(context,
                           MaterialPageRoute(builder: (context)
                           {
-                            return Screen8();
+                            return Screen11();
                           }),);
                       },
                       child: Text('Screen 11'),
