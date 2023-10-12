@@ -4,6 +4,7 @@ import 'package:flutter_widgets/folder2/Screen10.dart';
 import 'package:flutter_widgets/folder2/Screen7.dart';
 import 'package:flutter_widgets/folder2/Screen9.dart';
 import 'package:flutter_widgets/folder3/Screen11.dart';
+import 'package:flutter_widgets/folder3/Screen12.dart';
 
 import 'folder1/Screen1.dart';
 import 'folder1/Screen2.dart';
@@ -179,11 +180,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
                 SizedBox(height: 15),
 
-                //9-12 buttons
+                //10-12 buttons
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // 7th Screen button
+                    // 10th Screen button
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
@@ -197,7 +198,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                     SizedBox(width: 10),
 
-                    // 8th Screen button
+                    // 11th Screen button
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
@@ -211,13 +212,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
                     SizedBox(width: 10),
-                    // 9th Screen button
+                    // 12th Screen button
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
                           MaterialPageRoute(builder: (context)
                           {
-                            return Screen9();
+                            return Screen12();
                           }),);
                       },
                       child: Text('Screen 12'),
