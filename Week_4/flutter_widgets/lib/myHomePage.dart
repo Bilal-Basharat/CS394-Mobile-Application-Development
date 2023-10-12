@@ -5,6 +5,7 @@ import 'package:flutter_widgets/folder2/Screen7.dart';
 import 'package:flutter_widgets/folder2/Screen9.dart';
 import 'package:flutter_widgets/folder3/Screen11.dart';
 import 'package:flutter_widgets/folder3/Screen12.dart';
+import 'package:flutter_widgets/folder3/Screen13.dart';
 
 import 'folder1/Screen1.dart';
 import 'folder1/Screen2.dart';
@@ -232,13 +233,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // 7th Screen button
+                    // 13th Screen button
                     ElevatedButton(
                       onPressed: () {
                         Navigator.push(context,
                           MaterialPageRoute(builder: (context)
                           {
-                            return Screen7();
+                            return Screen13();
                           }),);
                       },
                       child: Text('Screen 13'),

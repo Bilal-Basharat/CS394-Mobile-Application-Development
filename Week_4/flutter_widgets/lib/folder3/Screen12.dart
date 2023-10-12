@@ -28,11 +28,11 @@ class _Screen12State extends State<Screen12> {
 
             StepperExample(),
 
-            SizedBox(height: 20),
-            Text('This is refresh widget Example'),
-            SizedBox(height: 20),
+            // RefreshIndicatorExample(),
 
-            RefreshIndicatorExample(),
+            Text('Widget used are: \n 1. Form Widget \n 2. Text Form Field \n'
+                ' 3. Stepper Widget \n 4.  \n'
+                , style: TextStyle(color: Colors.blue, fontSize: 18),),
 
           ],
         ),
