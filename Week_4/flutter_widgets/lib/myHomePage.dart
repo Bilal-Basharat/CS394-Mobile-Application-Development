@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/folder1/Screen5.dart';
 import 'package:flutter_widgets/folder2/Screen7.dart';
+import 'package:flutter_widgets/folder2/Screen9.dart';
 
 import 'folder1/Screen1.dart';
 import 'folder1/Screen2.dart';
 import 'folder1/Screen3.dart';
 import 'folder1/Screen4.dart';
 import 'folder2/Screen6.dart';
+import 'folder2/Screen8.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -151,7 +153,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(context,
                           MaterialPageRoute(builder: (context)
                           {
-                            return Screen5();
+                            return Screen8();
                           }),);
                       },
                       child: Text('Screen 8'),
@@ -165,13 +167,109 @@ class _MyHomePageState extends State<MyHomePage> {
                         Navigator.push(context,
                           MaterialPageRoute(builder: (context)
                           {
-                            return Screen6();
+                            return Screen9();
                           }),);
                       },
                       child: Text('Screen 9'),
                     ),
                   ],
-                )
+                ),
+
+                SizedBox(height: 15),
+
+                //9-12 buttons
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    // 7th Screen button
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context)
+                          {
+                            return Screen7();
+                          }),);
+                      },
+                      child: Text('Screen 10'),
+                    ),
+
+                    SizedBox(width: 10),
+
+                    // 8th Screen button
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context)
+                          {
+                            return Screen8();
+                          }),);
+                      },
+                      child: Text('Screen 11'),
+                    ),
+
+
+                    SizedBox(width: 10),
+                    // 9th Screen button
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context)
+                          {
+                            return Screen9();
+                          }),);
+                      },
+                      child: Text('Screen 12'),
+                    ),
+                  ],
+                ),
+
+                SizedBox(height: 15),
+
+                //13-15 buttons
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    // 7th Screen button
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context)
+                          {
+                            return Screen7();
+                          }),);
+                      },
+                      child: Text('Screen 13'),
+                    ),
+
+                    SizedBox(width: 10),
+
+                    // 8th Screen button
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context)
+                          {
+                            return Screen8();
+                          }),);
+                      },
+                      child: Text('Screen 14'),
+                    ),
+
+
+                    SizedBox(width: 10),
+                    // 9th Screen button
+                    ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context)
+                          {
+                            return Screen9();
+                          }),);
+                      },
+                      child: Text('Screen 15'),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),

@@ -85,8 +85,6 @@ Column(
       onChanged: (value) {},
     ),
 
-
-
     Text('Widgets used are: \n 1. DropDown Widget Widget \n 2. Grid View Widget \n  '
         '3. CheckBox Widget \n 4. Radio Box Widget ',
         style: TextStyle(color: Colors.blue, fontSize: 18,fontWeight: FontWeight.bold)),
