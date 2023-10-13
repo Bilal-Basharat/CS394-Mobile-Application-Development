@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/myHomePage.dart';
 
 class Screen12 extends StatefulWidget {
   const Screen12({super.key});
@@ -19,21 +20,47 @@ class _Screen12State extends State<Screen12> {
         child: Column(
           children: [
             Text('This is Form Example Widget'),
-              SizedBox(height: 20),
+              SizedBox(height: 15),
             FormExample(),
 
-            SizedBox(height: 20),
+            SizedBox(height: 15),
             Text('This is Stepper Widget Example Widget'),
-            SizedBox(height: 20),
+            SizedBox(height: 15),
 
             StepperExample(),
 
-            // RefreshIndicatorExample(),
+            SizedBox(height: 15),
+            Text('This is Inkwell Widget Example Widget'),
+            SizedBox(height: 15),
 
-            Text('Widget used are: \n 1. Form Widget \n 2. Text Form Field \n'
-                ' 3. Stepper Widget \n 4.  \n'
+        InkWell(
+          onTap: (){
+            Navigator.push(context,
+                MaterialPageRoute(builder: (Context) => MyHomePage() ));
+          },
+          child: Container(
+            padding: EdgeInsets.symmetric(horizontal: 10),
+            width: 200,
+            height: 40,
+            decoration: BoxDecoration(
+              color: Colors.green,
+              borderRadius: BorderRadius.circular(5),
+            ),
+            child: Center(
+              child: Text(
+                'Go to Home Screen',
+                style: TextStyle(color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+        ),
+SizedBox(height: 10),
+            Text('Widget used are: \n 1. Form Widget 2. Text Form Field \n'
+                ' 3. Stepper Widget 4. InkWell \n 5. Material Page Route'
                 , style: TextStyle(color: Colors.blue, fontSize: 18),),
-
           ],
         ),
       ),
@@ -70,8 +97,7 @@ class _FormExampleState extends State<FormExample> {
               return null;
             },
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16.0),
+          Center(
             child: ElevatedButton(
               onPressed: () {
                 // Validate will return true if the form is valid, or false if
@@ -136,54 +162,6 @@ class _StepperExampleState extends State<StepperExample> {
           content: Text('Content for Step 2'),
         ),
       ],
-    );
-  }
-}
-
-//refresh indicator widget example
-class RefreshIndicatorExample extends StatefulWidget {
-  const RefreshIndicatorExample({super.key});
-
-  @override
-  State<RefreshIndicatorExample> createState() =>
-      _RefreshIndicatorExampleState();
-}
-
-class _RefreshIndicatorExampleState extends State<RefreshIndicatorExample> {
-  final GlobalKey<RefreshIndicatorState> _refreshIndicatorKey =
-  GlobalKey<RefreshIndicatorState>();
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: RefreshIndicator(
-        key: _refreshIndicatorKey,
-        color: Colors.white,
-        backgroundColor: Colors.blue,
-        strokeWidth: 4.0,
-        onRefresh: () async {
-          // Replace this delay with the code to be executed during refresh
-          // and return a Future when code finishes execution.
-          return Future<void>.delayed(const Duration(seconds: 3));
-        },
-        // Pull from top to show refresh indicator.
-        child: ListView.builder(
-          itemCount: 25,
-          itemBuilder: (BuildContext context, int index) {
-            return ListTile(
-              title: Text('Item $index'),
-            );
-          },
-        ),
-      ),
-      floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {
-          // Show refresh indicator programmatically on button tap.
-          _refreshIndicatorKey.currentState?.show();
-        },
-        icon: const Icon(Icons.refresh),
-        label: const Text('Show Indicator'),
-      ),
     );
   }
 }
